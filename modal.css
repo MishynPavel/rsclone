@@ -1,0 +1,236 @@
+
+/*окно на информацию*/
+.modal_e, .modal_i, .modal_o, .modal_g, modal_m {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content_e, .modal-content_o, .modal-content_g, .modal-content_m {
+  font-family: 'Comfortaa';
+  font-size: smaller;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  border: 2px solid rgb(0, 155, 26);
+  border-radius: 10px;
+  width: 50%;
+  max-width: 450px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 1s;
+}
+
+.modal-content_i {
+  font-family: 'Comfortaa';
+  font-size: smaller;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  border: 2px solid rgb(0, 155, 26);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.all_exit>input[type="button"] {
+  font-family: 'Comfortaa';
+  color:  white;
+  background-color:  rgb(0, 155, 26);
+  border-radius: 5px;
+  padding: 1em;
+  min-width: 150px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0.5em;
+  outline: none;
+  border-style: none;
+  transition: 0.5s linear;
+}
+
+.all_exit>input[type="button"]:hover{
+  background-color: rgb(15, 115, 145);
+  webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.table_btn {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.table_btn>input[type="button"] {
+  font-family: 'Comfortaa';
+  color:  white;
+  background-color:  rgb(0, 155, 26);
+  border-radius: 5px;
+  padding: 1em;
+  min-width: 150px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0.5em;
+  outline: none;
+  border-style: none;
+  transition: 0.5s linear;
+}
+
+.table_btn>input[type="button"]:hover{
+  background-color: rgb(15, 115, 145);
+  webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.all_game>input[type="button"] {
+  font-family: 'Comfortaa';
+  color:  white;
+  background-color:  rgb(0, 155, 26);
+  border-radius: 5px;
+  padding: 1em;
+  min-width: 150px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0.5em;
+  outline: none;
+  border-style: none;
+  transition: 0.5s linear;
+}
+
+.all_game>input[type="button"]:hover{
+  background-color: rgb(15, 115, 145);
+  webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+form>input {
+  font-family: 'Comfortaa';
+  color:  white;
+  background-color:  rgb(0, 155, 26);
+  border-radius: 5px;
+  padding: 1em;
+  min-width: 150px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0.5em;
+  outline: none;
+  border-style: none;
+  transition: 0.5s linear;
+}
+
+form>input:hover{
+  background-color: rgb(15, 115, 145);
+  webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+form>input:active {
+  background: orange;
+}
+
+.close_i, .close_o, .close_g, .close_m {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: 0.5s linear;
+}
+
+.close_i:hover,.close_i:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  transform: rotate(360deg) scale(1.1);
+}
+
+.close_g:hover,.close_g:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  transform: rotate(360deg) scale(1.1);
+}
+
+.close_o:hover,.close_o:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  transform: rotate(360deg) scale(1.1);
+}
+
+.close_m:hover,.close_m:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  transform: rotate(360deg) scale(1.1);
+}
+
+.modal-header_e , .modal-header_g {
+  padding: 2px 16px;
+  background-color: rgb(0, 155, 26);
+  color: white;
+}
+
+.modal-header_i, .modal-header_o, .modal-header_m {
+  padding: 2px 16px;
+  background-color: rgb(0, 155, 26);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-body_e, .modal-body_o, .modal-body_g, .modal-body_m {
+  padding: 0.5em;
+}
+
+.modal-body_i {
+  padding: 0.5em;
+  text-align: justify;
+  text-indent: 5px;
+}
+
+#muted {
+  font-family: 'Comfortaa';
+  color:  white;
+  background-color:  rgb(0, 155, 26);
+  border-radius: 5px;
+  padding: 1em;
+  width: 60%;
+  max-width: 150px;
+  min-width: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: auto;
+  outline: none;
+  border-style: none;
+  transition: 1s linear;
+}
+
+#muted:hover{
+  background-color: rgb(15, 115, 145);
+  webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
