@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Coloring</title>
+	<link rel="shortcut icon" href="Icon/s_icon.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,500,700|Pacifico&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="modal.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="flex-header">
+		<div class="header-box"></div>
+		<div class="header-box"></div>
+		<div class="header-box">
+			<input type="button" id="game" value="ИГРАТЬ"  onmousedown="soundCryOnClick()" title="Начать игру">
+          <div id="gameModal" class="modal_g">
+            <div class="modal-content_g">
+              <div class="modal-header_g">
+                <span class="close_g" onmousedown="soundCryOnClick()">&times;</span>
+                <h2 style="margin: 0.5EM">Авторизация</h2>
+              </div>
+              <div class="modal-body_g">
+                <div class="all_game">
+                  <h1></h1><br>
+                  <form action="play.html" >
+                  <input name="username" hidden="hidden" required="required" pattern="^[a-zA-Z]+$" placeholder="Имя на латинице!">
+                  <input name="newname" type="submit" value="Новый игрок" hidden="hidden" placeholder="Имя на латинице!" pattern="^[a-zA-Z]+$">
+                  <input name="next" type="submit" value="Продолжить">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>         
+      </div>
+      <div class="header-box">
+        <div class="icon-box">
+          <input type="image" id="exit" onmousedown="soundCryOnClick()" src="Icon/exit.png" title="Покинуть игру" />
+            <div id="exitModal" class="modal_e">
+              <div class="modal-content_e">
+                <div class="modal-header_e">
+                  <h2 style="margin: 0.5EM">Покинуть игру?</h2>
+                </div>
+                <div class="modal-body_e">
+                  <div class="all_exit">
+                    <input type="button" onmousedown="soundPerformedOnClick()" value="Покинуть" onClick='location.href="http://it-academy.by/"'>
+                    <input type="button" onmousedown="soundCryOnClick()" value="Вернуться"  class="close_e">
+                  </div>
+                </div>
+              </div>
+            </div>
+          <input type="image" id="options" src="Icon/options.png" title="Настройки" onmousedown="soundCryOnClick()"/>
+            <div id="optiModal" class="modal_o">
+              <div class="modal-content_o">
+                <div class="modal-header_o">
+                  <div>
+                  <h2 style="margin: 0.5EM">Настройки звука:</h2>
+                  </div>
+                  <span class="close_o" onmousedown="soundCryOnClick()">&times;</span>
+                </div>
+                <div class="modal-body_o">
+                  <div id="muted" onmousedown="soundCryOnClick()">Отключить звук</div>
+                </div>
+              </div>
+            </div>
+          <input type="image" id="medal" src="Icon/record.png" title="Рекорды" onmousedown="soundCryOnClick()" onclick='location.href="rekord.html"'/>
+          <input type="image" id="info" src="Icon/info.png" title="Информация" onmousedown="soundCryOnClick()"/>
+            <div id="infoModal" class="modal_i">
+              <div class="modal-content_i">
+                <div class="modal-header_i">
+                  <div>
+                  <h2 style="margin: 0.5EM">Описание игры</h2>
+                  </div>
+                  <span class="close_i" onmousedown="soundCryOnClick()">&times;</span>
+                </div>
+                <div class="modal-body_i">
+                  <p>Данная игра является раскраской для самых маленьких.<br> 
+                  <hr>
+                  <b>Цель игры:</b> <br>
+                  Научиться узнавать цвета. Так же формирование усидчивости и внимательности.<br>
+                  <hr>
+                  <b>Процесс игры:</b><br>
+                  Игрок выбрав цвет, нажимает на области в картинке, которые окрашиваются.
+                  Присутствует примерный вариант, как можно раскрашивать картинку.<br>
+                  Игра продолжается до полного перекрашивания картинки, либо до конца отведенного времени.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="header-box"></div>
+    </div>
+    <script src="audio.js"></script>
+    <script src="modal.js"></script>
+    <script src="hello.js"></script>
+  </body>
+</html>
